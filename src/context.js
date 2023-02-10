@@ -25,7 +25,7 @@ class ProductProvider extends Component {
         });
         this.setState(() => {
             return { products };
-        }, this.checkCartItems);
+        }, this.checkCartItems)
     };
 
     getItem = id => {
@@ -36,7 +36,7 @@ class ProductProvider extends Component {
         const product = this.getItem(id);
         this.setState(() => {
             return { detailProduct: product };
-        });
+        })
     };
     addToCart = id => {
         let tempProducts = [...this.state.products];
